@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Class</title>
+    <style>
+        body{
+            background-color: rgb(60, 74, 133);
+            color: white;
+            font: normal 18pt Arial;
+        }
+         h1 > strong {
+            color: black;
+            font-weight: lighter;
+            font-size: 25pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting The DOM <br><strong>(Document Object Model)</strong></h1>
+    <p>Here we go, the first result:</p>
+    <p>result 2</p>
+    <div id="clickHere">Click in Here!!!</div>
+    <h2>USANDO O QUERY selector</h2>
+    <div id="query">Query Here!!!</div>
+
+
+
+    <script>
+        // seguindo a arvore DOM podemos escrever direto no DOM
+        // window.document.write(window.document.URL)
+        var body1 = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0];
+        body1.style.backgroundColor = 'gray';
+        p1.style.color = 'Yellow';
+        var d = window.document.getElementById('clickHere');
+        d.style.backgroundColor = 'green';
+        // d.innerText = 'OLA VICTOR';
+        window.document.getElementById('clickHere').innerText = 'KOEEE VICTOR!';
+        window.document.getElementsByTagName('h2')[0].style.backgroundColor = 'blue';
+
+        var d2 = window.document.querySelector('div#query');
+        d2.style.color = 'blue ';
+
+    </script>
+</body>
+</html>

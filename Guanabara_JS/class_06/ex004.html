@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var name = window.prompt('What is your name? ');
+        var wages = 1540.5
+        document.writeln(`Hello, <strong>${name.toUpperCase()}!</strong> Your name has ${name.length} letters. <br>Your wages is: <strong>${wages.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</strong>`);
+        document.write('<br> Boa, estamos aprendendo!');
+    </script>
+</body>
+</html>

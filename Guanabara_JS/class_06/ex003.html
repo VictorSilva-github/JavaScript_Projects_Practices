@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS studies</title>
+    <style>
+        body {
+            background-color: rgb(60, 68, 68);
+            color: rgb(183, 248, 4);
+            font: bold 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Hello World 
+    </h1>
+    <p>
+        Vamos Conseguir! JS vai ser facil.
+    </p>
+
+    <script>
+    //   var name = window.prompt("What is your name?");
+    //   window.alert('Nice to meet you, ' + name + '!! Click in OK');
+
+    // AQUI ESTAMOS TRATANDO OS DADOS 
+    // WINDOW PROMPT TEM STRING NO OUTPUT.
+    var n1 = Number.parseInt(window.prompt('type a number N1: '));
+    var n2 = window.prompt('type a number N2: ');
+
+    // podemos usar somente NUMBER o JS decide se ele é FLOAT OU INT
+    var n3 = Number(window.prompt('type a number N3: '));
+    
+    var sum = n1 + Number.parseInt(n2) + n3;
+        window.alert(`The final result between N1: ${n1}, N2: ${n2} and N3: ${n3} is ${sum}`);
+    </script>
+</body>
+</html>

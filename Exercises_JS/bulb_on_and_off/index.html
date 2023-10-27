@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp</title>
+    <style>
+        body {
+            margin: 40px;
+            background-color: rgb(101, 163, 217);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        img.imgBulb {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .bulbContainer {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Turn the bulb ON & OFF </h1>
+        <p id="addText">TAG VAZIA</p>
+
+        <div class="bulbContainer">
+            <button class="turnOn" onclick="turnOn()"> Turn ON </button>
+            <img class="imgBulb" id="bulbImage" src="pic_bulboff.jpg" alt="lampOff">
+            <button class="turnOff" onclick="turnOff()"> Turn OFF </button>
+        </div>
+
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="demo1" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="showDemo()">Click Me!</button>
+        <p></p>
+
+        <p id="text1" style="display: none;">lorem 1</p>
+        <p id="text2" style="display: none;">lorem 2</p>
+        <p id="text3" style="display: none;">lorem 3</p>
+        <p id="text4" style="display: none;">lorem 4</p>
+        <p id="text5" style="display: none;">lorem 5</p>
+        <p id="text6" style="display: none;">lorem 6</p>
+        <button onclick="showText()">Show Texts</button>
+
+
+    </div>
+
+    <script>
+        function turnOn() {
+            window.document.getElementById("bulbImage").src = 'pic_bulbon.jpg';
+        }
+        function turnOff() {
+            window.document.getElementById("bulbImage").src = 'pic_bulboff.jpg';
+        }
+        function showDemo() {
+            window.document.getElementById('demo1').style.display = 'block';
+        }
+
+        function showText() {
+            for (let i = 1; i <= 6; i++) {
+                let textId = 'text' + i;
+                document.getElementById(textId).style.display = 'block';
+            }
+        }
+
+        window.document.getElementById('addText').innerText = "Hello, ADDING text in the P TAG";
+
+    </script>
+</body>
+
+</html>
