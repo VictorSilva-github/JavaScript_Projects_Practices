@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual Seu Pais</title>
+</head>
+
+<body>
+    <h1>Where Are You From?</h1>
+    <h6>Type: USA, Brazil or Portugal <br>(Any other country "You are a Foreigner")</h6>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="Verify" onclick="countryValid()">
+    <div id="display"></div>
+
+
+    <script>
+        function countryValid() {
+            var country = document.getElementById('txt').value;
+            var result = document.getElementById('display');
+            result.innerHTML = `<p>You are from a country called <strong>${country.toUpperCase()}</strong></p>`;
+
+            if (country.toLowerCase() === 'brazil' || country.toLowerCase() === 'brasil') {
+                result.innerHTML += `<p>You are Brazilian! From <strong>${country.toUpperCase()}</strong></p>`;
+            } else if (country.toLowerCase() === 'usa' || country.toLowerCase() === 'us') {
+                result.innerHTML += `<p>You are American! from <strong>${country.toUpperCase()}</strong></p>`;
+            } else if (country.toLowerCase() === 'portugal') {
+                result.innerHTML += `<p>You are Portuguese! from <strong>${country.toUpperCase()}</strong></p>`;
+            } else {
+                result.innerHTML += `<p>You are a Foreigner! from <strong>${country.toUpperCase()}</strong></p>`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

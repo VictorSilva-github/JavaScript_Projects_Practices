@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(104, 104, 172);
+    font: normal 15px Arial;
+}
+
+/* header {
+    color: white;
+    text-align: center;
+} */
+
+h1{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    /* margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(82, 99, 99); */
+}
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.285);
+}
+
+#imgTime{
+    max-width: 250px;
+    height: 250px;
+    /* background-color: black; */
+}
+
+#msg{
+    font-size: 16px;   
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    /* margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(82, 99, 99); */
+}
