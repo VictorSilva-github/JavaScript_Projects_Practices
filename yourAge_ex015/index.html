@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Age</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Verify Your Age! </h1>
+    </header>
+
+    <section id="container">
+        <div >
+            <p>
+                Your year of birth:
+                <input type="number" name="txtyear" id="txtyear" placeholder="Enter birth year">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radioSex" id="male" checked>
+                <label for="male">Man</label>
+
+                <input type="radio" name="radioSex" id="woman">
+                <label for="woman">Woman</label>
+            </p>
+            <p>
+                <input type="button" value="Verify" onclick="verify()">
+            </p>
+        </div>
+
+        <div id="result">
+            <strong>
+                Fill in the form!
+            </strong> 
+        </div>
+        <div id="imgCenter">
+            <p class="deadPerson"></p>
+            <img id="addImg" src="img/hi.png" alt="">
+            <p class="MadeInJS"><strong>Project done in JavaScript</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Victor Silva</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
