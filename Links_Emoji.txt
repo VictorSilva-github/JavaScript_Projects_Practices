@@ -1,9 +1,10 @@
 Para colocar EMOJIS
-https://unicode.org/emoji/charts/full-emoji-list.html
 
+https://unicode.org/emoji/charts/emoji-list.html
 
 so funciona detro de crazes 
 TIPO ASSIm: 
  Vem Assim ((((U+1F60D))))	mude para isso >>
 `\u{1F3c1}`;
  `\u{1F449}`;
+ `\u{1F929}`;
