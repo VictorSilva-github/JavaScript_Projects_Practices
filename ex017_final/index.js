@@ -2,7 +2,6 @@ let addNumber = document.getElementById('txtn');
 let flist = document.getElementById('flist');
 let res = document.getElementById('res');
 let arrayValue = [];
-// let addNumber = document.getElementById('');
 
 function isNumber(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {

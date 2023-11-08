@@ -1,35 +1,83 @@
+/* General Styles */
 body {
     background-color: rgb(104, 104, 172);
-    font: normal 15px Arial;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
+/* Header Styles */
 header {
     color: white;
     text-align: center;
 }
 
+/* Section Styles */
 section {
     background-color: white;
     border-radius: 15px;
     padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.285);
+    width: 80%; /* Adjusted to be more responsive */
+    max-width: 350px; /* Limited maximum width for larger screens */
+    margin: 20px auto; /* Increased margin for better spacing */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-select#flist{
-    margin-top: 10px;
-    width: 200px;
+/* Form Element Styles */
+select#flist {
+    /* margin-top: 10px; */
+    width: 100%; /* Expanded to fill the container */
+    max-width: 200px; /* Limited maximum width for larger screens */
 }
 
-#txtn{
+#txtn {
     width: 100px;
 }
 
-#btnVerify{
-    margin-top: 10px;
+/* Styles for the "ADD Number" button */
+#btnAdd {
+    display: block;
+    width: 100%; /* Expanded to fill the container */
+    max-width: 110px; /* Limited maximum width for larger screens */
+    
+    padding: 10px 20px;
+    /* text-align: center; */
+    /* text-decoration: none; */
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+    font-size: 12px;
+    cursor: pointer;
 }
 
+#btnAddNumber:hover {
+    background-color: #2980b9;
+}
+
+/* Styles for the "Verify" button */
+#btnVerify {
+    display: block;
+    width: 50%; /* Expanded to fill the container */
+    max-width: 100px; /* Limited maximum width for larger screens */
+    margin: 10px; /* Centered the button */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e74c3c; /* Different color for the second button */
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btnVerify:hover {
+    background-color: #c0392b;
+}
+
+/* Footer Styles */
 footer {
     color: white;
     text-align: center;
