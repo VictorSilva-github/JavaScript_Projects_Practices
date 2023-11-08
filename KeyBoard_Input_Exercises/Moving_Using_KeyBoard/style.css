@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(25, 114, 92);
+    font: normal 15px Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

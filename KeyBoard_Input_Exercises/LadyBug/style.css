@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(40, 165, 134);
+    font: normal 15px Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+/* ladybug parameters */
+#ladybug{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    /* starting point */
+    top: 10px;
+    left: 10px;
+    transform: rotate(0deg);
+    transition: 0.2s;
+}
+
+#stopMessage {
+    color: rgb(149, 193, 3);
+    -webkit-text-stroke: 0.5px black; /* For some versions of Chrome and Safari */
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;  
+}
+
+#stopMessage.hovered {
+    color: rgb(255, 18, 18); /* Change the color on hover */
+   font-size: 50px;
+  
+}

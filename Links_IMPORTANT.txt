@@ -1,3 +1,9 @@
+PARA keycode em JS:
+https://www.toptal.com/developers/keycode
+
+
+
+****************************
 Para colocar EMOJIS
 
 https://unicode.org/emoji/charts/emoji-list.html
@@ -8,3 +14,4 @@ TIPO ASSIm:
 `\u{1F3c1}`;
  `\u{1F449}`;
  `\u{1F929}`;
+ *********************************
