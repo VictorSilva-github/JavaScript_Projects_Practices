@@ -8,6 +8,14 @@ header {
     text-align: center;
 }
 
+#setas{
+    font-size: 25px;
+}
+
+span{
+    font-size: 25px;
+    font-weight: bold;
+}
 /* ladybug parameters */
 #ladybug{
     position: absolute;

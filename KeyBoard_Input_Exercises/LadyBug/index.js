@@ -31,8 +31,15 @@ function checkLadybugOverlap() {
 
 document.addEventListener('keydown', (e) => {
     // console.log(e); // USING CONSOLE LOG TO SEE WHAT KEYS WAS PRESSED
+    
+    //setas HTML 
+    const setasText = document.getElementById('setas');
+
     if (e.keyCode === 37 && x > 0) {
         // move left
+        setasText.innerHTML = '&#8592;';
+        setasText.style.color = 'black';
+    
         x -= speed;
         console.log(x); //if the X is 0 is not going to move.
         ladybug.style.left = x + 'px';
@@ -40,6 +47,9 @@ document.addEventListener('keydown', (e) => {
 
     } else if (e.keyCode === 38 && y > 0) {
         // move up
+        setasText.innerHTML = '&#8593';
+        setasText.style.color = 'blue';
+        
         y -= speed;
         console.log(x); //if the Y is 0 is not going to move.
         ladybug.style.top = y + 'px';
@@ -47,6 +57,9 @@ document.addEventListener('keydown', (e) => {
 
     } else if (e.keyCode === 39 && x + 100 < windowWidth) {
         // move right
+        setasText.innerHTML = "&#8594";
+        setasText.style.color = 'black';
+
         x += speed;
         console.log(x); //if the X is 0 is not going to move.
         ladybug.style.left = x + 'px';
@@ -54,6 +67,8 @@ document.addEventListener('keydown', (e) => {
 
     } else if (e.keyCode === 40 && y + 100 < windowHeight) {
         // move down
+        setasText.innerHTML = "&#8595";
+        setasText.style.color = 'blue';
         y += speed;
         console.log(y); //if the Y is 0 is not going to move.
         ladybug.style.top = y + 'px';
