@@ -2,6 +2,8 @@
 let ladybug = document.querySelector('#ladybug');
 let stopMessage = document.querySelector('#stopMessage');
 
+let startbug = new Audio('./bug1.mp3');
+
 // initial position 
 let x = 0;
 let y = 0;
@@ -17,7 +19,6 @@ let windowHeight = window.innerHeight;
 function checkLadybugOverlap() {
     const ladybugRect = ladybug.getBoundingClientRect();
     const stopMessageRect = stopMessage.getBoundingClientRect();
-
     // Check if ladybug overlaps the stop message text
     // compare both
     const ladybugOverlapsMessage = !(
@@ -34,7 +35,7 @@ document.addEventListener('keydown', (e) => {
     
     //setas HTML 
     const setasText = document.getElementById('setas');
-
+    startbug.play();
     if (e.keyCode === 37 && x > 0) {
         // move left
         setasText.innerHTML = '&#8592;';
