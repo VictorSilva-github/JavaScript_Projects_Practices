@@ -9,12 +9,12 @@ console.log(numberGRID[0][2]);
 console.log(numberGRID[1][1]);
 console.log(numberGRID[2][2]);
 console.log(numberGRID[3][0]);
+console.log(numberGRID[3][4]);
 
 console.log(`************* FOR LOOP GRID ******************`);
 for (let i = 0; i < numberGRID.length; i++) {
     for (let j = 0; j < numberGRID[i].length; j++) {
         process.stdout.write(numberGRID[i][j] + '  ');
-
         // console.log(numberGRID[i][j]);  OUTRO
     }
     console.log(); // Insert a newline character

@@ -16,6 +16,6 @@ const array = [1, 2, 3, 4, 5];
 // Com o MAP eu consigo fazer um retorno
 
 const newArray = array.map(item =>{
-    return item * 2
+    return item * 10
 });
 console.log(newArray);
