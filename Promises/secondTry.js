@@ -16,9 +16,6 @@ async function secondFunction() {
     console.log('Terminou');
 }
 
-console.log(secondFunction());
-
-
 //function API - consumindo 
 
 function getUser(id) {
@@ -27,14 +24,13 @@ function getUser(id) {
     .catch((err) => console.log(err))
 }
 
-
 async function showName(id) {
     const user = await getUser(id);
 
     console.log(`user name is: ${user.data.first_name}`);
 }
 
-
+console.log(secondFunction());
 showName(3);
 
 
